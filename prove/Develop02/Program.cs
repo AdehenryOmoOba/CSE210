@@ -90,7 +90,7 @@ class Journal
         {
             foreach (var entry in entries)
             {
-                writer.WriteLine($"{entry.Prompt},{entry.Response},{entry.Date}");
+                writer.WriteLine($"{entry.Prompt}~{entry.Response}~{entry.Date}");
             }
         }
 
@@ -110,7 +110,7 @@ class Journal
             {
                 while (!reader.EndOfStream)
                 {
-                    string[] parts = reader.ReadLine().Split(",");
+                    string[] parts = reader.ReadLine().Split("~");
                     Entry loadedEntry = new Entry(parts[0], parts[1], parts[2]);
                     entries.Add(loadedEntry);
                 }
