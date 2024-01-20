@@ -34,6 +34,7 @@ class Program
                     myJournal.LoadJournalFromFile();
                     break;
                 case "5":
+                    myJournal.SaveJournalToFile();
                     Environment.Exit(0);
                     break;
                 default:
