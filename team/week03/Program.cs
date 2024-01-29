@@ -8,6 +8,7 @@ class Program
     {
         string reference;
         ScriptureReference parsedReference = new ScriptureReference("John 3:16");
+
         if (parsedReference.EndVerse == null)
         {
             reference = $"{parsedReference.Book} {parsedReference.Chapter}:{parsedReference.StartVerse}";
@@ -47,6 +48,7 @@ class Program
     static string HideRandomWords(Scripture scripture)
     {
         Random random = new Random();
+
         List<string> wordsToHide = scripture.Words.Where(word => !word.IsHidden).Select(word => word.Text).ToList();
 
         string newString = "";
@@ -145,7 +147,7 @@ class ScriptureReference
     private void ParseReference(string reference)
     {
         // Split the reference into parts
-        string[] parts = reference.Split(' ');
+        string[] parts = reference.Split(' '); // ["John", "3:16"]
 
         // Assuming the reference format is "Book Chapter:StartVerse-EndVerse"
         if (parts.Length >= 2)
