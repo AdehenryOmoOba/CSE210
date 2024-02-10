@@ -1,0 +1,2 @@
+SimpleGoal:Give a talk,Prepare a talk to give at church when asked.,50,False
+SimpleGoal:Pick up an item.,Go to Eleyele and pick up Jumia order.,45,True
