@@ -19,6 +19,8 @@ namespace eternal_quest
 
         }
 
+        public override int GetBonus() { return 0; }
+
         public override bool IsComplete()
         {
             return _isComplete;

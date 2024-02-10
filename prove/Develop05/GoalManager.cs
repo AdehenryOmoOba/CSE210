@@ -223,8 +223,8 @@ namespace eternal_quest
 
         private void ListGoalDetails()
         {
-            string undoneStatus = "[   ]";
-            string doneStatus = "[ x ]";
+            string undoneStatus = "[ ]";
+            string doneStatus = "[X]";
 
 
 
@@ -369,6 +369,21 @@ namespace eternal_quest
                 {
                     int newScore = selectedGoal.GetCurrentScore() + selectedGoal._points;
                     selectedGoal.SetCurrentScore(newScore);
+                }
+                else if (selectedGoal._goalType == "checkListGoal")
+                {
+                    selectedGoal.RecordEvent();
+
+                    if (selectedGoal.IsComplete())
+                    {
+                        selectedGoal.SetCurrentScore(selectedGoal.GetCurrentScore() + selectedGoal.GetBonus());
+                        Console.WriteLine($"\nHurray! You received {selectedGoal.GetBonus()} bonus points!");
+                    }
+                    else
+                    {
+                        selectedGoal.SetCurrentScore(selectedGoal.GetCurrentScore());
+                    }
+
                 }
                 else
                 {

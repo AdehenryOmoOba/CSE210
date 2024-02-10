@@ -33,6 +33,8 @@ namespace eternal_quest
         }
         public abstract void RecordEvent();
 
+        public abstract int GetBonus();
+
         public abstract bool IsComplete();
 
         public abstract string GetDetailsString();

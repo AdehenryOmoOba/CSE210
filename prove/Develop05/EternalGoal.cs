@@ -12,6 +12,7 @@ namespace eternal_quest
         }
 
         public override void RecordEvent() { }
+        public override int GetBonus() { return 0; }
 
         public override bool IsComplete()
         {

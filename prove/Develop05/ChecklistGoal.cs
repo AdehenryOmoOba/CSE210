@@ -21,17 +21,14 @@ namespace eternal_quest
         {
             _amountCompleted++;
 
-            Console.WriteLine($"Amount completed is now: {_amountCompleted}");
-            Console.WriteLine($"Total points is now: {_amountCompleted * _points}");
-
             int newSore = _amountCompleted * _points;
 
             SetCurrentScore(newSore);
+        }
 
-            if (_amountCompleted == _target)
-            {
-                _points += _bonus;
-            }
+        public override int GetBonus()
+        {
+            return _bonus;
         }
 
         public override bool IsComplete()
@@ -41,7 +38,7 @@ namespace eternal_quest
 
         public override string GetDetailsString()
         {
-            return $"{_shortName} ({_description}) - Completed {_amountCompleted}/{_target} times";
+            return $"{_shortName} ({_description}) -- Currently completed {_amountCompleted}/{_target}";
         }
 
         public override string GetStringRepresentation()
