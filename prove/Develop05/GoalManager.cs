@@ -324,8 +324,6 @@ namespace eternal_quest
 
                     case nameof(ChecklistGoal):
 
-                        // [1] description, [2] point weight, [3] done, [4] target, [5] bonus, [6] current total score
-
                         if (int.TryParse(parts[3], out int amountCompleted) &&
                             int.TryParse(parts[4], out int target) &&
                             int.TryParse(parts[5], out int bonus))

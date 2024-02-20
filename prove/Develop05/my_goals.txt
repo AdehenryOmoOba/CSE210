@@ -1,2 +1,0 @@
-SimpleGoal:Give a talk,Prepare a talk to give at church when asked,150,True,150
-EternalGoal:Scripture study,Study scripture for at least 10 minutes every day,25,100
