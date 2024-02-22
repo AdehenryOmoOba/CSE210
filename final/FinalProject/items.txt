@@ -1,4 +1,4 @@
-1,Gas,5,1/1/0001 12:00:00 AM
-END
-2,Generator,20,1/1/0001 12:00:00 AM
-END
+1,Gas,56,2/22/2024 5:03:24 PM|-|2/22/2024 12:50:19 PM==Item added to list,2/22/2024 4:29:44 PM==Checked gas controller,
+2,Car,43,2/22/2024 5:03:24 PM|-|2/22/2024 12:50:31 PM==Item added to list,
+3,Blender,6,2/22/2024 5:03:24 PM|-|2/22/2024 3:53:44 PM==Item added to list,
+4,Television,30,2/22/2024 5:03:51 PM|-|2/22/2024 3:54:05 PM==Item added to list,2/22/2024 5:03:51 PM==Repaired antenna,
